@@ -61,5 +61,4 @@ const Screen2 = () => {
     );
   };
   
-  
   export default Screen2;
