@@ -1,8 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import HOST from '../../assest/girlClap.png';
-import PODIUM from '../../assest/awardPlatform.png';
-import LEFTCURTON from '../../assest/curtain-left.png';
-import RIGHTCURTON from '../../assest/curtain-right.png';
 import './Screen1.scss';
 
 const Screen1 = () => {
@@ -51,27 +47,13 @@ const Screen1 = () => {
 
   return (
     <>
-      <div className="main-contanier">
-        <div className="curtons">
-          <img src={LEFTCURTON} alt="" className="left" />
-          <img src={RIGHTCURTON} alt="" className="right" />
-        </div>
-        <div className="stage-background">
-          <div className="clapperboard">
+     <div className="screen1">
             <span className="counter">
               <p>{formattedTime}</p>
             </span>
             <span className="text1">casting call</span>
             <span className="text2">The Results R In!</span>
           </div>
-        </div>
-        <div className="podium">
-          <img src={PODIUM} alt="" />
-          <div className="host">
-            <img src={HOST} alt="" />
-          </div>
-        </div>
-      </div>
     </>
   );
 };

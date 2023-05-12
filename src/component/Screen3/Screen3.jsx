@@ -1,11 +1,20 @@
-import HOST from "../../assest/girlClap.png";
-import PODIUM from "../../assest/awardPlatform.png";
 import "./Screen3.scss";
 import ARROW from "../../assest/arrow.png";
 import { useState, useEffect } from "react";
+// import { useNavigate } from 'react-router-dom';
+// import Screen1 from '../Screen1/Screen1'
+
+
 // import { useState } from "react";
 
-const Screen3 = () => {
+const Screen3 = ({handleBackToScreen1}) => {
+
+// const navigate = useNavigate();
+
+// const handleClick =()=>{
+//   navigate('/screen1');
+// }
+  
 
   const [number, setNumber] = useState(15000);
 
@@ -29,9 +38,8 @@ const Screen3 = () => {
        
     return (
       <>
-        <div className="main-contanier">
-          <div className="stage-background">
-            <div className="heading">
+        <div className="screen3">
+        <div className="heading">
               <span>4 Friends Gave U</span>
               <span>Some Love</span>
             </div>
@@ -39,18 +47,12 @@ const Screen3 = () => {
               <span>{number}</span>
             </div>
             <div className="speech-bubble">
-              <span>Congrats!</span></div>          <div className="arrow-png">
+              <span>Congrats!</span></div> 
+               {/* <div className="arrow-png">
                 <button >
-              <img  onClick={()=>{}} src={ARROW} alt="" className="left" />
+              <img  onClick={handleBackToScreen1} src={ARROW} alt="" className="left" />
                 </button>
-            </div>
-          </div>
-          <div className="podium">
-            <img src={PODIUM} alt="" />
-            <div className="host">
-              <img src={HOST} alt="" />
-            </div>
-          </div>
+            </div> */}
         </div>
       </>
     );

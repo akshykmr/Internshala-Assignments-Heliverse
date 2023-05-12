@@ -1,126 +1,43 @@
 @import "../../css-config/mixins.scss";
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Poppins:wght@300;400;500;600&display=swap');
-.main-contanier {
-    width: 100vw;
-    height: 760px;
-    display: flex;
-    flex-direction: column;
+.screen1{
+  height: 38vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  span.counter {
+    width: 120px;
+    height: 100px;
+    background-image: url(../../assest/castingLogo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     margin: 0 auto;
+    margin-top: 30px;
+  }
+  .counter > p{
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    transform: rotate(-15deg);
+    margin-left: 4px;
     position: relative;
-  
-    .curtons {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-      z-index: 1;
-  
-      .left {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 80%;
-        height: 100%;
-        animation: slide-curtain-left 3s ease-out forwards;
-      }
-  
-      .right {
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 80%;
-        height: 100%;
-        animation: slide-curtain-right 3s ease-out forwards;
-      }
+    top: 55px;
   }
-
-  .stage-background {
-    height: 80%;
-    background-image: url(../../assest/award_bg.png);
-    background-size: cover;
-  }
-  .clapperboard{
-    height: 50%;
-    display: flex;
-    flex-direction: column;
-  
-    span.counter {
-      width: 100px;
-      height: 120px;
-      background-image: url(../../assest/castingLogo.png);
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: center;
+  .text1{
+      width: 170px;
       margin: 0 auto;
+      font-size: 26px;
+      text-transform: uppercase;
+      transform: rotate(-14deg);
+      font-family: 'Dancing Script', cursive;
+      color: rgb(200, 69, 204);
+      margin-top: 30px;
+  }
+  .text2{
       margin-top: 50px;
-    //   border: 2px solid red;
-    }
-    .counter > p{
-      text-align: center;
-      color: white;
-      font-size: 16px;
-      font-weight: 500;
-      transform: rotate(-15deg);
-      margin-left: 5px;
-    //   border: 2px solid red;
-      position: relative;
-      top: 45px;
-    }
-    .text1{
-        font-size: 32px;
-        text-transform: uppercase;
-        transform: rotate(-14deg);
-        font-family: 'Dancing Script', cursive;
-        color: rgb(200, 69, 204);
-        margin: 10px 0;
-    }
-    .text2{
-        margin-top: 50px;
-        font-size: 28px;
-        color: rgb(198, 233, 24);
-    }
-  }
-  .podium {
-    height: 20%;
-    width: 100%;
-
-    img {
-      height: 100%;
-      width: 100%;
-    }
-    .host {
-        box-sizing: content-box;
-        // border: 3px solid red;
-        position: absolute;
-        top: 345px;
-        left: 50%;
-        transform: translateX(-50%);
-        img {
-          height: 300px;
-          width: auto;
-          display: block;
-          margin: 0 auto;
-        }
-      }
-  }
-}
-
-@keyframes slide-curtain-left {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-@keyframes slide-curtain-right {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(100%);
+      font-size: 28px;
+      color: rgb(198, 233, 24);
   }
 }

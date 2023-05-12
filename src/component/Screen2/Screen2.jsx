@@ -1,7 +1,4 @@
-import HOST from "../../assest/girlClap.png";
-import PODIUM from "../../assest/awardPlatform.png";
-import LEFTCURTON from "../../assest/curtain-left.png";
-import RIGHTCURTON from "../../assest/curtain-right.png";
+
 import "./Screen2.scss";
 import ARROW from "../../assest/arrow.png";
 import { useState } from "react";
@@ -17,13 +14,8 @@ const Screen2 = () => {
        
     return (
       <>
-        <div className="main-contanier">
-          <div className="curtons">
-            <img src={LEFTCURTON} alt="" className="left" />
-            <img src={RIGHTCURTON} alt="" className="right" />
-          </div>
-          <div className="stage-background">
-            <div className="slidder-box">
+        <div className="Screen2">
+        <div className="slidder-box">
               {slidderIn && (
                 <div className="slidder">
                   <div className={` ${slidderIn === true ? 'Casting-details' : slidderIn === 'out' ? 'Casting-details-out' : ''}`}>
@@ -40,7 +32,7 @@ const Screen2 = () => {
                 </div>
               )}
             </div>
-            <div className="heading">Gave U Some Love</div>
+            <div className="Screen2-heading">Gave U Some Love</div>
             <div className="heart-box">
               <span>15000</span>
             </div>
@@ -50,13 +42,6 @@ const Screen2 = () => {
                 </button>
             </div>
           </div>
-          <div className="podium">
-            <img src={PODIUM} alt="" />
-            <div className="host">
-              <img src={HOST} alt="" />
-            </div>
-          </div>
-        </div>
       </>
     );
   };
