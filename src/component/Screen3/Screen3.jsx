@@ -47,12 +47,13 @@ const Screen3 = ({handleBackToScreen1}) => {
               <span>{number}</span>
             </div>
             <div className="speech-bubble">
-              <span>Congrats!</span></div> 
-               {/* <div className="arrow-png">
+              <span>Congrats!</span>
+              </div> 
+               <div className="arrow-png">
                 <button >
               <img  onClick={handleBackToScreen1} src={ARROW} alt="" className="left" />
                 </button>
-            </div> */}
+            </div>
         </div>
       </>
     );

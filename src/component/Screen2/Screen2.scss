@@ -1,8 +1,14 @@
 @import "../../css-config/mixins.scss";
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Dancing+Script:wght@500&family=Poppins:wght@300;400;500;600&display=swap');
-html, body {
-  overflow-x: hidden;
+@include md{
+  html, body {
+    overflow-x: hidden;
+    width: 30vw;
+    margin: 0 auto;
+    overflow-y: hidden;
+  }
 }
+  
 .Screen2{
   height: 38vh;
   // border: 3px solid greenyellow;
@@ -11,7 +17,7 @@ html, body {
   position: relative;
     .slidder-box{
         // border: 3px solid rgb(3, 2, 72);
-        height:40vh;
+        height:38vh;
         margin-top: 20px;
         .slidder{
             // border: 3px solid rgb(95, 234, 118);
@@ -22,13 +28,13 @@ html, body {
                 margin: 0 auto;
                 justify-content: space-around;
                 transform: translateX(100%);
-                animation: cartSlideWindow 0.3s ease forwards;
+                animation: slideIn 0.3s ease forwards;
                 &-out{
                 display: flex;
                 margin: 0 auto;
                 justify-content: space-around;
                 transform: translateX(100%);
-                animation: cartSlideWindowout 0.3s ease-out forwards;
+                animation: slideOut 0.3s ease-out forwards;
                 }
                 .img-on-left,
                 &-out .img-on-left  {
@@ -133,7 +139,7 @@ html, body {
 }        
     
   
-@keyframes cartSlideWindow {
+@keyframes slideIn {
     0% {
       transform: translateX(100%);
     }
@@ -148,7 +154,7 @@ html, body {
     }
   }
 
-  @keyframes cartSlideWindowout {
+  @keyframes slideOut {
     0% {
       transform: translateX(0);
    

@@ -24,6 +24,11 @@
     margin-left: 4px;
     position: relative;
     top: 55px;
+    @include md{
+    top: 48px;
+    margin-left: 5px;
+    font-size: 13px;
+    }
   }
   .text1{
       width: 170px;
