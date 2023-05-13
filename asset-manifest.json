@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/heli-verse/static/css/main.863575a4.css",
+    "main.js": "/heli-verse/static/js/main.95f47c0f.js",
+    "static/media/avtar2.png": "/heli-verse/static/media/avtar2.1479b0e686aa8bfd65d3.png",
+    "static/media/curtain-left.png": "/heli-verse/static/media/curtain-left.f2df98d339ae4f6db445.png",
+    "static/media/curtain-right.png": "/heli-verse/static/media/curtain-right.99d33d9b7c8b7a2bd314.png",
+    "static/media/girlClap.png": "/heli-verse/static/media/girlClap.1838bda6d0283d588fcb.png",
+    "static/media/main-heart.png": "/heli-verse/static/media/main-heart.7b5a6d196216ffb89a33.png",
+    "static/media/speech-bubble.png": "/heli-verse/static/media/speech-bubble.bc6642ea58dbea315fc2.png",
+    "static/media/award_bg.png": "/heli-verse/static/media/award_bg.58ddf3af7a7b04ba0142.png",
+    "static/media/castingLogo.png": "/heli-verse/static/media/castingLogo.d396d72ea7891ba3a1e2.png",
+    "static/media/awardPlatform.png": "/heli-verse/static/media/awardPlatform.4d248b2fb2f980c948ee.png",
+    "static/media/arrow.png": "/heli-verse/static/media/arrow.cd8beeb8f367a74c45e9.png",
+    "index.html": "/heli-verse/index.html",
+    "main.863575a4.css.map": "/heli-verse/static/css/main.863575a4.css.map",
+    "main.95f47c0f.js.map": "/heli-verse/static/js/main.95f47c0f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.863575a4.css",
+    "static/js/main.95f47c0f.js"
+  ]
+}
